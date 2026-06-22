@@ -12,10 +12,10 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="brand">
-        <span class="brand-mark">UR</span>
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="UpgradeResto" />
         <span class="brand-text">UpgradeResto</span>
-      </div>
+      </a>
       <nav class="main-nav" aria-label="Navigation principale">
         <a href="index.html" class="nav-link">Accueil</a>
         <a href="offres.html" class="nav-link">Offres</a>
@@ -41,29 +41,13 @@
             </div>
           </div>
 
-          <form id="contact-form" class="contact-form">
-            <label>
-              Nom
-              <input type="text" name="name" placeholder="Votre nom" required />
-            </label>
-            <label>
-              Nom du restaurant
-              <input type="text" name="restaurant" placeholder="Nom du restaurant" required />
-            </label>
-            <label>
-              Email
-              <input type="email" name="email" placeholder="votre@email.com" required />
-            </label>
-            <label>
-              Téléphone
-              <input type="tel" name="phone" placeholder="06 12 34 56 78" required />
-            </label>
-            <label>
-              Message
-              <textarea name="message" rows="5" placeholder="Décrivez votre situation" required></textarea>
-            </label>
-            <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
-            <p id="form-message" class="form-message" aria-live="polite"></p>
+          <form id="contact-form" class="contact-form" action="https://formspree.io/f/mlgyeljj" method="POST">
+            <input type="hidden" name="_next" value="https://yanisprades43-prog.github.io/upgraderesto-site/merci.html">
+            <input type="text" name="restaurant" placeholder="Nom du restaurant" required />
+            <input type="text" name="nom" placeholder="Votre nom" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
           </form>
         </div>
       </section>
