@@ -10,12 +10,14 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header class="site-header">
       <a href="index.html" class="logo">
         <img src="images/logo.png" alt="UpgradeResto" />
         <span class="brand-text">UpgradeResto</span>
       </a>
+
       <nav class="main-nav" aria-label="Navigation principale">
         <a href="index.html" class="nav-link">Accueil</a>
         <a href="offres.html" class="nav-link">Offres</a>
@@ -35,19 +37,35 @@
             <p class="section-copy">
               Remplissez le formulaire ci-dessous et notre équipe vous contactera sous 24h pour étudier votre visibilité Google.
             </p>
+
             <div class="contact-info">
               <p><strong>Réponse sous 24h</strong></p>
               <p>Conseils adaptés aux restaurants locaux.</p>
             </div>
           </div>
 
-          <form id="contact-form" class="contact-form" action="https://formspree.io/f/mlgyeljj" method="POST">
-            <input type="hidden" name="_next" value="https://yanisprades43-prog.github.io/upgraderesto-site/merci.html">
+          <!-- FORMULAIRE -->
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/mlgyeljj"
+            method="POST"
+          >
+            <!-- REDIRECTION APRÈS ENVOI -->
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yanisprades43-prog.github.io/upgraderesto-site/merci.html"
+            />
+
             <input type="text" name="restaurant" placeholder="Nom du restaurant" required />
             <input type="text" name="nom" placeholder="Votre nom" required />
             <input type="email" name="email" placeholder="Email" required />
             <textarea name="message" placeholder="Votre message" required></textarea>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
+
+            <button type="submit" class="btn btn-primary">
+              Envoyer
+            </button>
           </form>
         </div>
       </section>
@@ -58,12 +76,14 @@
         <span class="brand-mark">UR</span>
         <span class="brand-text">UpgradeResto</span>
       </div>
-      <p>Site premium pour une agence digitale dédiée à la visibilité des restaurants sur Google.</p>
-      <p class="footer-note">© 2026 UpgradeResto. Réponse sous 24h.</p>
+
+      <p>
+        Site premium pour une agence digitale dédiée à la visibilité des restaurants sur Google.
+      </p>
+
+      <p class="footer-note">
+        © 2026 UpgradeResto. Réponse sous 24h.
+      </p>
     </footer>
-
-    <script src="script.js"></script>
-
   </body>
-
 </html>
